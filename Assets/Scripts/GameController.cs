@@ -1,7 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class GameController : MonoBehaviour
@@ -16,6 +14,7 @@ public class GameController : MonoBehaviour
 
     private Vector2 tapPosition;
     private bool isMobile;
+    private bool gameStarted;
     private Cube last;
     private GameObject cubesParent;
     private int count;
@@ -35,14 +34,14 @@ public class GameController : MonoBehaviour
     {
         if(gameOver)
         {
+            gameStarted = false;
             gameOver = false;
             pointsText.text = "GAME OVER";
             Time.timeScale = 0;
             StartCoroutine(RestartGame());
         }
-        if (!last.isReleased)
+        if (!last.isReleased && gameStarted)
         {
-
             if (!isMobile)
             {
                 if (Input.GetMouseButton(0))
@@ -93,11 +92,12 @@ public class GameController : MonoBehaviour
 
     public void StartGame()
     {
+        count = 0;
         SetPoints(0);
         cubesParent = new GameObject("Cubes");
         GenerateCube();
         gameOver = false;
-        count = 0;
+        gameStarted = true;
     }
     public void AddPoints(int points)
     {
@@ -113,6 +113,9 @@ public class GameController : MonoBehaviour
     private void GenerateCube()
     {
         last = Instantiate(cubePref, new Vector3(0, 50, 125), transform.rotation);
+        last.Value = count % 2 + 1;
+        last.tag = Mathf.Pow(2, last.Value).ToString();
+        last.SetMaterial(last.gameObject, last.tag);
         last.transform.SetParent(cubesParent.transform);
     }
     

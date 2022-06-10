@@ -1,10 +1,9 @@
 using System.Collections;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Cube : MonoBehaviour
 {
+    public static Cube Instanse;
     public Rigidbody rb;
     public CharacterController character;
 
@@ -14,6 +13,11 @@ public class Cube : MonoBehaviour
     public bool isReleased = false;
     public bool isPressed = false;
     private bool isMerged = false;
+    private void Awake()
+    {
+        if (Instanse == null)
+            Instanse = this;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -33,7 +37,7 @@ public class Cube : MonoBehaviour
             }
         }
     }
-    private void SetMaterial(GameObject x, string s)
+    public void SetMaterial(GameObject x, string s)
     {
         foreach (Renderer r in x.GetComponentsInChildren<Renderer>())
         {
