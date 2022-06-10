@@ -5,8 +5,6 @@ ScriptsOnlyBuild:
     - Cube
     - GameController
     - MenuController
-    GoogleMobileAds.Common.dll:
-    - GoogleMobileAds.Common.MobileAdsEventExecutor
     GoogleMobileAds.Editor.dll:
     - GoogleMobileAds.Editor.GoogleMobileAdsSettings
     Unity.Rider.Editor.dll:
@@ -58,31 +56,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1584}
     - Class: 114
-      Script: {instanceID: 12716}
+      Script: {instanceID: 1636}
     - Class: 114
-      Script: {instanceID: 12766}
+      Script: {instanceID: 1686}
     - Class: 114
-      Script: {instanceID: 12816}
+      Script: {instanceID: 1738}
     - Class: 114
-      Script: {instanceID: 12960}
+      Script: {instanceID: 1882}
     - Class: 114
-      Script: {instanceID: 13248}
+      Script: {instanceID: 2170}
     - Class: 114
-      Script: {instanceID: 13562}
+      Script: {instanceID: 2486}
     - Class: 114
-      Script: {instanceID: 13680}
+      Script: {instanceID: 2604}
     - Class: 114
-      Script: {instanceID: 13722}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 13850}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 14042}
+      Script: {instanceID: 2970}
     - Class: 114
-      Script: {instanceID: 14130}
+      Script: {instanceID: 3058}
     - Class: 114
-      Script: {instanceID: 15112}
+      Script: {instanceID: 4040}
     - Class: 114
-      Script: {instanceID: 15380}
+      Script: {instanceID: 4308}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -129,23 +127,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 12960}
+      Script: {instanceID: 1882}
     - Class: 114
-      Script: {instanceID: 13562}
+      Script: {instanceID: 2486}
     - Class: 114
-      Script: {instanceID: 13680}
+      Script: {instanceID: 2604}
     - Class: 114
-      Script: {instanceID: 13722}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 13850}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 14042}
+      Script: {instanceID: 2970}
     - Class: 114
-      Script: {instanceID: 14606}
+      Script: {instanceID: 3534}
     - Class: 114
-      Script: {instanceID: 15070}
+      Script: {instanceID: 3998}
     - Class: 114
-      Script: {instanceID: 15412}
+      Script: {instanceID: 4340}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
