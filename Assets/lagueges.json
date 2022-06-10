@@ -1,0 +1,12 @@
+{
+	"languages" : [
+	{
+		"name" : "en",
+		"start" : "Play"
+	},
+	{
+		"name" : "ru",
+		"start" : "Играть"
+	}
+	]
+}
